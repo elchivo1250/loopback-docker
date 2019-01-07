@@ -4,12 +4,12 @@ This repository is an empty loopback API project with some supporting software s
 
 ## Installation
 
-Clone the repository: `git clone git@github.com:elchivo1250/loopback-docker.git`
+Run the init.sh file with the following positional parameters:
+- $1 - MYSQL_USER - The username for the default mysql user for this database. 
+- $2 - MYSQL_PASSWORD - The password for the default mysql user for this database.
+- $3- MYSQL_ROOT_PASSWORD - The password for the root mysql user for this database.
 
-Start the database: `docker-compose up -d db`
-
-Install node packages: `docker-compose -f services.yml run --rm npm install`
-
-Update the database: `docker-compose -f services.yml run --rm updateSchema`
-
-Run the web container: `docker-compose up -d api`
+### Bad Example
+```
+./init.sh loopback_user password password
+```
