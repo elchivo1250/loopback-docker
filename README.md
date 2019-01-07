@@ -13,3 +13,7 @@ Run the init.sh file with the following positional parameters:
 ```
 ./init.sh loopback_user password password
 ```
+
+This will create all the configs then install and run the database and web containers. After it's finished running, you
+should be able to go to http://localhost/explorer to see the API. Now change the remote repository's url to a new project, 
+and you're all set. Huzzah!
