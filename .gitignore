@@ -82,3 +82,8 @@ Session.vim
 tags
 # Persistent undo
 [._]*.un~
+
+# Application
+config/secrets*.env
+
+!config/secrets.dist.env
