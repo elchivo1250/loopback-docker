@@ -1,0 +1,43 @@
+{
+  "name": "EmptyAPI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "dependencies": {
+    "compression": "^1.0.3",
+    "cors": "^2.5.2",
+    "helmet": "^3.10.0",
+    "loopback": "^3.22.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^6.2.0",
+    "loopback-connector-mysql": "^5.3.1",
+    "serve-favicon": "^2.0.1",
+    "strong-error-handler": "^3.0.0"
+  },
+  "devDependencies": {
+    "ava": "^1.0.1",
+    "loopback-cli": "^5.0.0",
+    "nan": "^2.12.1",
+    "eslint": "^3.17.1",
+    "eslint-config-loopback": "^8.0.0"
+  },
+  "scripts": {
+    "test": "ava test",
+    "lint": "eslint .",
+    "start": "node .",
+    "posttest": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/elchivo1250/loopback-mysql.git"
+  },
+  "author": "elchivo1250",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elchivo1250/loopback-mysql/issues"
+  },
+  "homepage": "https://github.com/elchivo1250/loopback-mysql#readme"
+}

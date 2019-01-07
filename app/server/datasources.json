@@ -1,0 +1,12 @@
+{
+  "myapi": {
+    "host": "${MYSQL_HOST}",
+    "port": "${MYSQL_PORT}",
+    "url": "",
+    "database": "${MYSQL_DATABASE}",
+    "password": "${MYSQL_PASSWORD}",
+    "name": "myapi",
+    "user": "${MYSQL_USER}",
+    "connector": "mysql"
+  }
+}
