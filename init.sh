@@ -28,3 +28,4 @@ docker-compose -f services.yml run --rm npm install
  docker exec -i loopback-docker_db_1 sh -c "mysql -u root -p -e \"ALTER USER '$1'@'%' IDENTIFIED WITH mysql_native_password BY '$2'\""
 
 docker-compose -f services.yml run --rm updateSchema
+docker-compose up -d web
