@@ -17,3 +17,9 @@ Run the init.sh file with the following positional parameters:
 This will create all the configs then install and run the database and web containers. After it's finished running, you
 should be able to go to http://localhost/explorer to see the API. Now change the remote repository's url to a new project, 
 and you're all set. Huzzah!
+
+In Windows, you'll need to run the commands yourself in the container.
+
+```
+mysql -u root --password=$MYSQL_ROOT_PASSWORD -e "ALTER USER 'USER_NAME'@'%' IDENTIFIED WITH mysql_native_password BY 'PASSWORD'"
+```
